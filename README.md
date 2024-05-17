@@ -20,8 +20,9 @@ Este repositorio contiene el backlog y documentación de un chatbot para WhatsAp
 2. [Descripción de la Organización](#descripción-de-la-organización)
 3. [Refinamiento de la Solución Propuesta](#refinamiento-de-la-solución-propuesta)
 4. [Funcionalidad Lograda](#funcionalidad-lograda)
-5. [Indicadores y Lecciones Aprendidas](#indicadores-y-lecciones-aprendidas)
-6. [Conclusiones](#conclusiones)
+5. [Implementación Detallada](#implementación-detallada)
+6. [Indicadores y Lecciones Aprendidas](#indicadores-y-lecciones-aprendidas)
+7. [Conclusiones](#conclusiones)
 
 ## 📖 Introducción
 
@@ -47,6 +48,43 @@ La implementación del chatbot con NegocioBot incluye:
 - **Mensajes Automatizados:** Respuestas automáticas con información básica.
 - **Secuencias a través de Botones:** Navegación intuitiva y simplificada.
 - **Integración con Fuentes Externas:** Conexión con sistemas de e-commerce y VTex.
+
+## 📜 Implementación Detallada
+
+### Diagrama de Flujo
+
+El flujo del chatbot fue diseñado para asegurar una experiencia de usuario fluida y eficiente. A continuación, se presenta el diagrama de flujo que describe las interacciones principales:
+
+![image](https://github.com/linaballesteros/chatbot-casa-ferretera/assets/65176988/1cb3156e-fbdf-4450-9af7-494798542e8a)
+
+![Diagrama de Flujo](https://github.com/linaballesteros/chatbot-casa-ferretera/blob/main/Diagrama%20Atenci%C3%B3n%20al%20Cliente%20WhatsApp%20-%20Casa%20Ferretera.pdf)
+
+### Modulo de Respuestas
+
+El módulo de respuestas de NegocioBot es donde se configuran las respuestas automáticas basadas en la entrada del usuario. Se utilizan técnicas de procesamiento de lenguaje natural para proporcionar la respuesta más relevante.
+
+### Secuencias a través de Botones
+
+NegocioBot permite la creación de secuencias interactivas utilizando botones. Esto facilita la navegación del usuario a través de diferentes opciones y proporciona una experiencia de usuario más dinámica.
+
+### Integración con APIs Externas
+
+Utilizamos la herramienta Make para la integración con APIs externas. Make es una herramienta de automatización que permite conectar diferentes servicios y APIs a través de WebHooks.
+
+#### Configuración de Make
+
+Make fue configurado para manejar solicitudes GET y POST, permitiendo al chatbot recuperar información en tiempo real, como el estado de pedidos de Casa Ferretera.
+
+### Ejemplo de Flujo de Pedido
+
+El flujo de consulta de pedidos fue una de las funcionalidades implementadas utilizando Make y WebHooks. A continuación, se muestra un ejemplo del flujo:
+
+1. El usuario envía un mensaje solicitando el estado de su pedido.
+2. El chatbot activa un WebHook configurado en Make.
+3. Make realiza una solicitud GET a la API interna de Casa Ferretera.
+4. La respuesta de la API se procesa y se envía de vuelta al usuario a través del chatbot.
+
+![image](https://github.com/linaballesteros/chatbot-casa-ferretera/assets/65176988/8c5212e5-a723-4054-bc71-9312a58e0100)
 
 ## 📈 Indicadores y Lecciones Aprendidas
 
