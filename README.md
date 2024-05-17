@@ -57,7 +57,7 @@ El flujo del chatbot fue diseñado para asegurar una experiencia de usuario flui
 
 ![image](https://github.com/linaballesteros/chatbot-casa-ferretera/assets/65176988/1cb3156e-fbdf-4450-9af7-494798542e8a)
 
-![Diagrama de Flujo](https://github.com/linaballesteros/chatbot-casa-ferretera/blob/main/Diagrama%20Atenci%C3%B3n%20al%20Cliente%20WhatsApp%20-%20Casa%20Ferretera.pdf)
+![Diagrama de Flujo](https://github.com/linaballesteros/chatbot-casa-ferretera/blob/main/flowchart-chatbot.pdf)
 
 ### Modulo de Respuestas
 
